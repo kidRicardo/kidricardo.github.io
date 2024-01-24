@@ -1,1 +1,2 @@
-Voici mon portfolio https://kidricardo.github.io
+# Ricardo Portifolio
+[Ricardo tchakounte kuebia](https://kidricardo.github.io)
