@@ -1,1 +1,1 @@
-# kidRicardo.github.io
+Voici mon portfolio https://kidricardo.github.io/#education
