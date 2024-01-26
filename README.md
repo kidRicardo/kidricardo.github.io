@@ -1,3 +1,3 @@
 # Ricardo Portifolio
 
-[Ricardo tchakounte kuebia](https://kidricardo.github.io)
+[Ricardo tchakounte ](https://kidricardo.github.io)
