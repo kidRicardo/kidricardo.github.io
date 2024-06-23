@@ -10943,9 +10943,6 @@ p.lead {
 .dev-icons {
   font-size: 3rem;
 }
-section.resume-section-hide{
-visibility: hidden;
-}
 
 section.resume-section {
   display: flex;
