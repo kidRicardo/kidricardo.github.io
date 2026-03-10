@@ -10944,6 +10944,16 @@ p.lead {
   font-size: 3rem;
 }
 
+.dev-icon-text {
+  display: inline-block;
+  width: 3rem; /* match icon size */
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: var(--bs-font-sans-serif);
+}
+
 section.resume-section {
   display: flex;
   align-items: center;
