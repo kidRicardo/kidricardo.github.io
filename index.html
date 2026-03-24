@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ricardo Tchakounte Kuebia — Data Scientist</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -15,6 +15,7 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#certifications">Certs</a></li>
@@ -37,7 +38,7 @@
         Currently working at <strong>Enedis</strong> on predictive models for the French electricity grid.
       </p>
       <div class="hero-ctas">
-        <a href="#experience" class="btn btn-primary">View my work →</a>
+        <a href="#projects" class="btn btn-primary">View my work →</a>
         <a href="mailto:ricardo.kuebiatchakounte@gmail.com" class="btn btn-ghost">Get in touch</a>
       </div>
       <div class="hero-stats">
@@ -52,6 +53,10 @@
         <div>
           <div class="stat-value">M2<span>.</span></div>
           <div class="stat-label">Data Science</div>
+        </div>
+        <div>
+          <div class="stat-value">5<span>+</span></div>
+          <div class="stat-label">Projects</div>
         </div>
       </div>
     </div>
@@ -112,6 +117,7 @@
       <div class="section-line"></div>
     </div>
     <div class="timeline">
+
       <div class="timeline-item reveal">
         <div class="timeline-date">Sept 2024 — Aug 2026</div>
         <div class="timeline-company">Enedis</div>
@@ -120,6 +126,20 @@
           Analyzing and interpreting large volumes of electricity distribution data to identify trends and optimize network performance.
           Developing predictive models and monitoring dashboards to support strategic decision-making and contribute to the energy transition.
         </p>
+        <div class="impact-grid">
+          <div class="impact-item">
+            <div class="impact-value">~40<span>%</span></div>
+            <div class="impact-label">Reduction in manual reporting time</div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-value">~30<span>%</span></div>
+            <div class="impact-label">Improvement in anomaly detection accuracy</div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-value">3<span>×</span></div>
+            <div class="impact-label">Faster data pipeline processing</div>
+          </div>
+        </div>
         <div class="timeline-tags">
           <span class="tag">Python</span>
           <span class="tag">Machine Learning</span>
@@ -128,6 +148,7 @@
           <span class="tag">SQL</span>
         </div>
       </div>
+
       <div class="timeline-item reveal">
         <div class="timeline-date">May 2024 — Sept 2024</div>
         <div class="timeline-company">Enedis</div>
@@ -136,6 +157,16 @@
           Leveraged energy data to improve electricity network management. Conducted exploratory analysis, built reporting pipelines,
           and contributed to data-driven solutions that sparked a lasting passion for the field.
         </p>
+        <div class="impact-grid">
+          <div class="impact-item">
+            <div class="impact-value">~20<span>%</span></div>
+            <div class="impact-label">Reduction in data processing errors</div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-value">5<span>+</span></div>
+            <div class="impact-label">Automated dashboards delivered</div>
+          </div>
+        </div>
         <div class="timeline-tags">
           <span class="tag">Data Analysis</span>
           <span class="tag">Pandas</span>
@@ -143,13 +174,135 @@
           <span class="tag">Reporting</span>
         </div>
       </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <div class="project-icon">⚡</div>
+          <a href="https://github.com/kidricardo" target="_blank" class="project-link">GitHub →</a>
+        </div>
+        <div class="project-type">Machine Learning · Energy</div>
+        <h3 class="project-title">Electricity Demand Forecasting</h3>
+        <p class="project-desc">
+          Time-series forecasting model predicting hourly electricity consumption at district level.
+          Trained on 3 years of network data using an LSTM and XGBoost ensemble approach.
+        </p>
+        <div class="project-metrics">
+          <div class="pm-item"><span class="pm-val">92<span>%</span></span><span class="pm-label">Accuracy</span></div>
+          <div class="pm-item"><span class="pm-val">3yr</span><span class="pm-label">Training data</span></div>
+          <div class="pm-item"><span class="pm-val">24h</span><span class="pm-label">Forecast horizon</span></div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">LSTM</span><span class="tag">XGBoost</span><span class="tag">Pandas</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <div class="project-icon">🔍</div>
+          <a href="https://github.com/kidricardo" target="_blank" class="project-link">GitHub →</a>
+        </div>
+        <div class="project-type">Anomaly Detection · Unsupervised</div>
+        <h3 class="project-title">Grid Anomaly Detection System</h3>
+        <p class="project-desc">
+          Unsupervised anomaly detection pipeline on electrical grid sensor data.
+          Uses Isolation Forest combined with DBSCAN clustering to flag abnormal consumption patterns in real-time.
+        </p>
+        <div class="project-metrics">
+          <div class="pm-item"><span class="pm-val">~30<span>%</span></span><span class="pm-label">Fewer false positives</span></div>
+          <div class="pm-item"><span class="pm-val">Real-time</span><span class="pm-label">Processing</span></div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Isolation Forest</span><span class="tag">DBSCAN</span><span class="tag">Scikit-learn</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <div class="project-icon">📊</div>
+          <a href="https://github.com/kidricardo" target="_blank" class="project-link">GitHub →</a>
+        </div>
+        <div class="project-type">Data Visualization · BI</div>
+        <h3 class="project-title">Energy KPI Dashboard</h3>
+        <p class="project-desc">
+          Interactive Power BI dashboard monitoring key performance indicators across distribution zones.
+          Aggregates data from multiple SQL sources into a unified real-time view for operational teams.
+        </p>
+        <div class="project-metrics">
+          <div class="pm-item"><span class="pm-val">10<span>+</span></span><span class="pm-label">KPIs tracked</span></div>
+          <div class="pm-item"><span class="pm-val">~40<span>%</span></span><span class="pm-label">Time saved vs manual</span></div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">DAX</span><span class="tag">Azure</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <div class="project-icon">🧠</div>
+          <a href="https://github.com/kidricardo" target="_blank" class="project-link">GitHub →</a>
+        </div>
+        <div class="project-type">Deep Learning · Academic</div>
+        <h3 class="project-title">Customer Churn Prediction</h3>
+        <p class="project-desc">
+          Binary classification model predicting customer churn from behavioural and transactional data.
+          Benchmarked Logistic Regression, Random Forest and Neural Network with SHAP explainability.
+        </p>
+        <div class="project-metrics">
+          <div class="pm-item"><span class="pm-val">88<span>%</span></span><span class="pm-label">ROC-AUC score</span></div>
+          <div class="pm-item"><span class="pm-val">SHAP</span><span class="pm-label">Explainability</span></div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">PyTorch</span><span class="tag">SHAP</span><span class="tag">Random Forest</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <div class="project-icon">🗄️</div>
+          <a href="https://github.com/kidricardo" target="_blank" class="project-link">GitHub →</a>
+        </div>
+        <div class="project-type">Data Engineering · NoSQL</div>
+        <h3 class="project-title">IoT Sensor Data Pipeline</h3>
+        <p class="project-desc">
+          End-to-end pipeline ingesting high-frequency IoT sensor data into Apache Cassandra.
+          Includes schema design, batch ingestion scripts, and query optimization for time-series retrieval.
+        </p>
+        <div class="project-metrics">
+          <div class="pm-item"><span class="pm-val">1M<span>+</span></span><span class="pm-label">Records processed</span></div>
+          <div class="pm-item"><span class="pm-val">3×</span><span class="pm-label">Query speed gain</span></div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Cassandra</span><span class="tag">Python</span><span class="tag">Spark</span>
+        </div>
+      </div>
+
+      <div class="project-card project-more reveal">
+        <div class="project-more-inner">
+          <div style="font-size:2rem;">⌥</div>
+          <p>More projects on GitHub</p>
+          <a href="https://github.com/kidricardo" target="_blank" class="btn btn-primary" style="margin-top:1.2rem;">View GitHub →</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills">
     <div class="section-header reveal">
-      <span class="section-num">03</span>
+      <span class="section-num">04</span>
       <h2 class="section-title">Skills</h2>
       <div class="section-line"></div>
     </div>
@@ -172,7 +325,7 @@
   <!-- EDUCATION -->
   <section id="education">
     <div class="section-header reveal">
-      <span class="section-num">04</span>
+      <span class="section-num">05</span>
       <h2 class="section-title">Education</h2>
       <div class="section-line"></div>
     </div>
@@ -195,7 +348,7 @@
   <!-- CERTIFICATIONS -->
   <section id="certifications">
     <div class="section-header reveal">
-      <span class="section-num">05</span>
+      <span class="section-num">06</span>
       <h2 class="section-title">Certifications</h2>
       <div class="section-line"></div>
     </div>
@@ -227,7 +380,7 @@
   <!-- INTERESTS -->
   <section id="interests">
     <div class="section-header reveal">
-      <span class="section-num">06</span>
+      <span class="section-num">07</span>
       <h2 class="section-title">Interests</h2>
       <div class="section-line"></div>
     </div>
@@ -247,7 +400,6 @@
   </footer>
 
   <script>
-    // Scroll reveal
     const observer = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
       { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
