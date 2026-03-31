@@ -72,6 +72,12 @@ nav {
 
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
 .nav-links a {
   color: var(--muted);
   text-decoration: none;
