@@ -10,6 +10,48 @@
   --border: rgba(255,255,255,0.07);
   --glow: 0 0 40px rgba(0,229,160,0.15);
 }
+/* LIGHT MODE (default) */
+:root {
+  --bg:           #f7f5f0;
+  --surface:      #ffffff;
+  --surface2:     #f2ede6;
+  --accent:       #1a6b4a;
+  --accent2:      #2d4de0;
+  --accent-light: rgba(26,107,74,0.08);
+  --text:         #1a1a1a;
+  --muted:        #6b6560;
+  --border:       rgba(0,0,0,0.08);
+  --shadow:       0 2px 16px rgba(0,0,0,0.06);
+  --shadow-h:     0 8px 32px rgba(0,0,0,0.11);
+  --nav-bg:       rgba(247,245,240,0.9);
+}
+
+/* DARK MODE */
+html.dark {
+  --bg:           #0a0a0f;
+  --surface:      #111118;
+  --surface2:     #18181f;
+  --accent:       #00e5a0;
+  --accent2:      #5b6fff;
+  --accent-light: rgba(0,229,160,0.08);
+  --text:         #f0f0f5;
+  --muted:        #6b6b7e;
+  --border:       rgba(255,255,255,0.07);
+  --shadow:       0 2px 20px rgba(0,0,0,0.3);
+  --shadow-h:     0 8px 36px rgba(0,0,0,0.45);
+  --nav-bg:       rgba(10,10,15,0.85);
+}
+
+/* smooth transitions */
+body, nav, section, footer,
+.project-card, .skill-card, .cert-card,
+.edu-card, .interest-item, .contact-item,
+.impact-item, .project-metrics, .hero-photo-badge {
+  transition: background-color 0.35s ease, border-color 0.35s ease,
+  color 0.35s ease, box-shadow 0.35s ease;
+}
+ 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
