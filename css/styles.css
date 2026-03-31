@@ -81,6 +81,15 @@ nav {
   transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--accent); }
+/* THEME TOGGLE BUTTON */
+.theme-toggle {
+  margin: 0 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+}
 
 /* ── HERO ── */
 .hero {
