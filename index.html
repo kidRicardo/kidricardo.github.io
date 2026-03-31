@@ -416,11 +416,26 @@
   </footer>
 
   <script>
+    // --- SCROLL REVEAL ---
     const observer = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
       { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
     );
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // --- THEME TOGGLE ---
+    const html = document.documentElement;
+    const btn  = document.getElementById('themeToggle');
+
+    // restore saved preference
+    if (localStorage.getItem('theme') === 'dark') {
+      html.classList.add('dark');
+    }
+
+    btn.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
   </script>
 
 </body>
